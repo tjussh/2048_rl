@@ -106,14 +106,4 @@ def inference_graph(state_batch_placeholder,target_placeholder,actions_placehold
     optimizer = tf.train.AdamOptimizer(learning_rate = 10e-5).minimize(loss = loss)
     return pred, loss, optimizer
 
-"""
-a = FeedModel()
-#a.restore_model('model/RL.ckpt')
-a.sess.run(a.init)
-a.save_model('model/RL.ckpt')
-"""
-
-
-
-
 

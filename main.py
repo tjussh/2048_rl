@@ -56,7 +56,7 @@ def eps_greedy(s,model,eps):
 
 
 if __name__ == "__main__":
-    browser = webdriver.Chrome('D:\chromedriver_win32\chromedriver.exe')
+    browser = webdriver.Chrome('/usr/local/bin/chromedriver')
     env = EnvOps.env(browser)
     env.activate()
     epsodic(env)
